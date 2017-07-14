@@ -18,4 +18,4 @@ if [[ "$*" == npm*start* ]]; then
 	done
 fi
 
-exec "$@"
+knex-migrator init; exec "$@"
