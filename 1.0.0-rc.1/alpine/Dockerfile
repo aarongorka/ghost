@@ -32,6 +32,7 @@ RUN set -ex; \
 	\
 	npm install --production; \
 	npm install --save ghost-s3-storage; \
+	npm install --save knex-migrator; \
 	\
 	apk del .build-deps; \
 	\
