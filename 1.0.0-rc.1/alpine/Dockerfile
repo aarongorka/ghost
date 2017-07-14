@@ -31,6 +31,7 @@ RUN set -ex; \
 	unzip ghost.zip; \
 	\
 	npm install --production; \
+	npm install --save ghost-s3-storage; \
 	\
 	apk del .build-deps; \
 	\
