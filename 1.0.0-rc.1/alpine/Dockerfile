@@ -40,6 +40,8 @@ RUN set -ex; \
 	npm cache clean; \
 	rm -rf /tmp/npm*
 
+COPY content/storage/ghost-s3/index.js content/storage/ghost-s3/index.js
+
 ENV GHOST_CONTENT /var/lib/ghost
 RUN mkdir -p "$GHOST_CONTENT" \
 	&& chown -R node:node "$GHOST_CONTENT" \
